@@ -41,6 +41,7 @@ This repository includes an importable n8n workflow for bounty #5:
 - Workflow JSON: `workflows/weekly-dev-summary-n8n.json`
 - Setup guide: `docs/n8n-weekly-dev-summary.md`
 - Sample output: `samples/weekly-dev-summary-sample-output.md`
+- Static validator: `tests/validate_weekly_dev_summary_workflow.py`
 
 The workflow runs every Friday at 17:00, fetches weekly GitHub commits, closed issues, and merged PRs, sends the activity to `claude-sonnet-4-20250514`, and delivers the narrative summary to Slack via webhook.
 

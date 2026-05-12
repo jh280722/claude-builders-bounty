@@ -43,5 +43,9 @@ This workflow generates a weekly narrative summary of a GitHub repository's acti
   - GitHub activity fetch code node
   - Claude API HTTP request node using `claude-sonnet-4-20250514`
   - Slack webhook delivery node
+- Repeatable validator included at `tests/validate_weekly_dev_summary_workflow.py`:
+  ```bash
+  python tests/validate_weekly_dev_summary_workflow.py
+  ```
 
 A real n8n execution still requires live `ANTHROPIC_API_KEY` and `SLACK_WEBHOOK_URL` values in the target n8n instance.
